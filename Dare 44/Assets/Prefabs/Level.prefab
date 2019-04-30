@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3526536689181343762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3526536689181343760}
+  - component: {fileID: 3526536689181343763}
+  m_Layer: 0
+  m_Name: Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3526536689181343760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3526536689181343762}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.13962811}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3526536689181343763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3526536689181343762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a6b9b4a3c573c4894c4002f5c30046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xOffset: 70
+  yOffset: 33
+  baseXOffset: 35
+  baseYOffset: 17
+  xSize: 5
+  ySize: 5
+  roomPrefabs:
+  - {fileID: 145537988138949148, guid: 14672ab4482a4624e94b25d6f3d30337, type: 3}
+  - {fileID: 145537988138949148, guid: 471421d00bf75ea4aa595966a775092c, type: 3}
+  bossRoom: {fileID: 145537988138949148, guid: b51b76f4e53e6364ea7ef505f20b8120, type: 3}
+  EntranceRoom: {fileID: 145537988138949148, guid: 71c2e74d5fd286b4b8ad335b6a3dbcb0,
+    type: 3}
+  vendorRoom: {fileID: 145537988138949148, guid: 8ab7db40cff159d4bb2577ac2e36e3ac,
+    type: 3}
