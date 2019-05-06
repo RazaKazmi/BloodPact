@@ -21,26 +21,26 @@ public class HubMainDoor : MonoBehaviour
     void Start()
     {
 
-        PlayerPrefs.SetFloat("Souls", staticVars.souls);
-        PlayerPrefs.SetInt("Floor", staticVars.maxFloor);
-        PlayerPrefs.SetInt("sMaxHP", Upgrades.statcount[0]);
-        PlayerPrefs.SetInt("sMaxMP", Upgrades.statcount[1]);
-        PlayerPrefs.SetInt("sMelee", Upgrades.statcount[2]);
-        PlayerPrefs.SetInt("sMagic", Upgrades.statcount[3]);
-        PlayerPrefs.SetInt("sMana", Upgrades.statcount[4]);
-        PlayerPrefs.SetInt("sMagicResist", Upgrades.statcount[5]);
+        //PlayerPrefs.SetFloat("Souls", staticVars.souls);
+        //PlayerPrefs.SetInt("Floor", staticVars.maxFloor);
+        //PlayerPrefs.SetInt("sMaxHP", Upgrades.statcount[0]);
+        //PlayerPrefs.SetInt("sMaxMP", Upgrades.statcount[1]);
+        //PlayerPrefs.SetInt("sMelee", Upgrades.statcount[2]);
+        //PlayerPrefs.SetInt("sMagic", Upgrades.statcount[3]);
+        //PlayerPrefs.SetInt("sMana", Upgrades.statcount[4]);
+        //PlayerPrefs.SetInt("sMagicResist", Upgrades.statcount[5]);
 
-        PlayerPrefs.SetFloat("MaxHP", entities.player.GetComponent<Player>().maxHealth);
-        PlayerPrefs.SetFloat("MaxMP", entities.player.GetComponent<Player>().maxMana);
-        PlayerPrefs.SetFloat("Melee", entities.player.GetComponent<Player>().meleeDamageIncrease);
-        PlayerPrefs.SetFloat("Magic", entities.player.GetComponent<Player>().magicDamageIncrease);
-        PlayerPrefs.SetFloat("Mana", entities.player.GetComponent<Player>().ManaCostReduction);
-        PlayerPrefs.SetFloat("MagicResist", entities.player.GetComponent<Player>().damageResistance);
+        //PlayerPrefs.SetFloat("MaxHP", entities.player.GetComponent<Player>().maxHealth);
+        //PlayerPrefs.SetFloat("MaxMP", entities.player.GetComponent<Player>().maxMana);
+        //PlayerPrefs.SetFloat("Melee", entities.player.GetComponent<Player>().meleeDamageIncrease);
+        //PlayerPrefs.SetFloat("Magic", entities.player.GetComponent<Player>().magicDamageIncrease);
+        //PlayerPrefs.SetFloat("Mana", entities.player.GetComponent<Player>().ManaCostReduction);
+        //PlayerPrefs.SetFloat("MagicResist", entities.player.GetComponent<Player>().damageResistance);
 
         GameInformation.entities.player.transform.position = new Vector3(0,3,0);
-        GameInformation.entities.player.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        GameInformation.entities.player.GetComponent<Player>().addHP(GameInformation.entities.player.GetComponent<Player>().maxHealth);
-        GameInformation.entities.player.GetComponent<Player>().addMP(GameInformation.entities.player.GetComponent<Player>().maxMana);
+        GameInformation.entities.player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        //GameInformation.entities.player.GetComponent<Player>().addHP(GameInformation.entities.player.GetComponent<Player>().maxHealth);
+        //GameInformation.entities.player.GetComponent<Player>().addMP(GameInformation.entities.player.GetComponent<Player>().maxMana);
     }
 
     // Update is called once per frame
@@ -117,7 +117,7 @@ public class HubMainDoor : MonoBehaviour
         SceneManager.LoadScene("GameWorld");
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
@@ -127,7 +127,7 @@ public class HubMainDoor : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player")
         {

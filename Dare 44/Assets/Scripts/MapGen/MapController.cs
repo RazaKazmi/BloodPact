@@ -87,23 +87,23 @@ public class MapController : MonoBehaviour
                     t = Instantiate<GameObject>(roomPrefabs[Random.Range(0, roomPrefabs.Length)], transform.position + new Vector3((xOffset * (i - (xSize * 0.5f))) + baseXOffset, (yOffset * (j - (ySize * 0.5f))) + baseYOffset, 0), transform.rotation);
                 }
 
-                if (i == xSize - 1)
-                {
-                    t.GetComponent<Room>().rightBlocker.SetActive(true);
-                }
-                if (i == 0)
-                {
-                    t.GetComponent<Room>().leftBlocker.SetActive(true);
-                }
+                //if (i == xSize - 1)
+                //{
+                //    t.GetComponent<Room>().rightBlocker.SetActive(true);
+                //}
+                //if (i == 0)
+                //{
+                //    t.GetComponent<Room>().leftBlocker.SetActive(true);
+                //}
 
-                if (j == ySize - 1)
-                {
-                    t.GetComponent<Room>().topBlocker.SetActive(true);
-                }
-                if (j == 0)
-                {
-                    t.GetComponent<Room>().bottomBlocker.SetActive(true);
-                }
+                //if (j == ySize - 1)
+                //{
+                //    t.GetComponent<Room>().topBlocker.SetActive(true);
+                //}
+                //if (j == 0)
+                //{
+                //    t.GetComponent<Room>().bottomBlocker.SetActive(true);
+                //}
 
                 t.transform.parent = transform;
                 rooms[i, j] = t;

@@ -20,13 +20,9 @@ public class CameraBehavoir : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
-        //transform.position = new Vector3(staticVars.currentRoom.transform.position.x, staticVars.currentRoom.transform.position.y, transform.position.z);
 
-        //if (Mathf.Abs(player.transform.position.x - staticVars.currentRoom.transform.position.x) < buffer.x)
-        //{
-        //    transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
-        //}
+        transform.position = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
+
         if (player.transform.position.x - staticVars.currentRoom.transform.position.x > -buffer.x && player.transform.position.x - staticVars.currentRoom.transform.position.x < buffer.x + 0.5f)
         {
             transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
@@ -60,6 +56,6 @@ public class CameraBehavoir : MonoBehaviour
             }
         }
 
-        //transform.position = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
+       
     }
 }

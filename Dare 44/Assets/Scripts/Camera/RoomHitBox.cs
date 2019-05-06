@@ -19,7 +19,7 @@ public class RoomHitBox : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
@@ -27,7 +27,7 @@ public class RoomHitBox : MonoBehaviour
             MoveToLayer(transform.parent,0);
         }
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "Player")
             GameInformation.staticVars.currentRoom = gameObject;
