@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ca0cf0f02b5cd44810ac6b3ebb6486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRef: {fileID: 8746225036949296054, guid: f9c81a65400ca3240b21056ef6a9a601,
+  playerRef: {fileID: 6611082369211224557, guid: 7635b497d0bc20b48bf25b09a4c659dc,
     type: 3}
   music: {fileID: 685189862}
 --- !u!4 &364614872

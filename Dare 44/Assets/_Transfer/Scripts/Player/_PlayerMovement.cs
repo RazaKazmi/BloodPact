@@ -221,9 +221,12 @@ public class _PlayerMovement : MonoBehaviour
         {
             Debug.Break();
         }
-        physicsBox.enabled = true;
-        canJump = true;
-        playerAnimation.setAir(false);
+        if (other.tag == "Platform")
+        {
+            physicsBox.enabled = true;
+            canJump = true;
+            playerAnimation.setAir(false);
+        }
         if (other.transform.name == "NonJumpThrough")
         {
             canDrop = false;
@@ -233,8 +236,11 @@ public class _PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        canJump = true;
-        playerAnimation.setAir(false);
+        if (other.tag == "Platform")
+        {
+            canJump = true;
+            playerAnimation.setAir(false);
+        }
         if (other.transform.name == "NonJumpThrough")
         {
             canDrop = false;
@@ -247,8 +253,11 @@ public class _PlayerMovement : MonoBehaviour
         {
             canDrop = true;
         }
-        playerAnimation.setAir(true);
-        canJump = false;
+        if (other.tag == "Platform")
+        {
+            playerAnimation.setAir(true);
+            canJump = false;
+        }
     }
 
 

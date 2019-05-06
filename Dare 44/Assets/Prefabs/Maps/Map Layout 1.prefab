@@ -266,7 +266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7252170135207142017
 Transform:
   m_ObjectHideFlags: 0
@@ -22537,7 +22537,7 @@ GameObject:
   - component: {fileID: 5975044556577579668}
   m_Layer: 0
   m_Name: NonJumpThrough
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25222,7 +25222,7 @@ GameObject:
   - component: {fileID: 890047552775499332}
   m_Layer: 0
   m_Name: Platforms
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
