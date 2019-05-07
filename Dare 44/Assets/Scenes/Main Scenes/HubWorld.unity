@@ -19860,5 +19860,15 @@ PrefabInstance:
       propertyPath: m_AnimatedTiles.Array.data[1].second.m_IsLooping
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3371004223502125074, guid: b8933bed621cd75459a21445a0be942e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371004223899360784, guid: b8933bed621cd75459a21445a0be942e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8933bed621cd75459a21445a0be942e, type: 3}

@@ -52,9 +52,7 @@ MonoBehaviour:
   bossDead: 0
   exits: {fileID: 0}
   enemyPrefabs:
-  - {fileID: 7279552950642583206, guid: c6a78fbf39ca9ae40b8d88046371d184, type: 3}
-  - {fileID: 5951585212354700687, guid: ebdac168873178a4c8cd8dd7a38b5e19, type: 3}
-  - {fileID: 2070059799460972574, guid: 6942d3c1d2938c0488e561bf46c1097d, type: 3}
+  - {fileID: 4624514780605455556, guid: 0665ab63a6ea6a9448e2b31fc76ae783, type: 3}
   enemyLocations:
   - {fileID: 2942569058830790134}
   - {fileID: 3930989300534869863}

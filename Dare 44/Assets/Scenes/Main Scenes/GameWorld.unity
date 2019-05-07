@@ -980,7 +980,7 @@ PrefabInstance:
         type: 3}
       propertyPath: EntranceRoom
       value: 
-      objectReference: {fileID: 145537988138949148, guid: 14672ab4482a4624e94b25d6f3d30337,
+      objectReference: {fileID: 145537988138949148, guid: 1b638cfb938cae54d9d3643aad70bc51,
         type: 3}
     - target: {fileID: 3526536689181343763, guid: c84586202f14d3b46a034d02aa6ecfd8,
         type: 3}

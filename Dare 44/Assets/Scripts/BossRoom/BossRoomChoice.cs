@@ -43,7 +43,7 @@ public class BossRoomChoice : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
@@ -52,7 +52,7 @@ public class BossRoomChoice : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
